@@ -1,91 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    >
+    <title>Panda SaaS – Bootstrap Starter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">PandaSaaS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <a class="btn btn-primary ms-lg-3" href="#signup">Get Started</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="py-5 bg-light text-center">
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-3">Supercharge Your Team's Productivity</h1>
+          <p class="lead mb-4">Modern SaaS platform to automate workflows, manage projects, and collaborate seamlessly—all in one place.</p>
+          <a href="#signup" class="btn btn-primary btn-lg px-4 mb-2">Try it Free</a>
+          <p class="text-muted mb-0">No credit card required • Cancel anytime</p>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="fw-bold">Powerful Features Designed For Growth</h2>
+              <p class="text-muted mb-0">Everything you need to scale your business efficiently.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="mb-3">
+                    <span class="btn btn-outline-primary rounded-circle px-3 py-2 fs-4"><i class="bi bi-speedometer2"></i></span>
+                  </div>
+                  <h5 class="card-title">Real-Time Analytics</h5>
+                  <p class="card-text text-muted">Monitor key metrics and gain insights with our intuitive dashboard.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="mb-3">
+                    <span class="btn btn-outline-success rounded-circle px-3 py-2 fs-4"><i class="bi bi-people"></i></span>
+                  </div>
+                  <h5 class="card-title">Team Collaboration</h5>
+                  <p class="card-text text-muted">Work together via shared boards, project tracking, and built-in chat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="mb-3">
+                    <span class="btn btn-outline-warning rounded-circle px-3 py-2 fs-4"><i class="bi bi-shield-lock"></i></span>
+                  </div>
+                  <h5 class="card-title">Secure Cloud Storage</h5>
+                  <p class="card-text text-muted">Protected infrastructure keeps your projects and files always safe.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="fw-bold">Simple Pricing for Every Team</h2>
+              <p class="text-muted mb-0">Start free—upgrade at any time. No hidden fees.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+              <div class="card border-0 shadow-sm h-100 text-center">
+                <div class="card-header bg-transparent">
+                  <h5 class="mb-0">Starter</h5>
+                </div>
+                <div class="card-body">
+                  <h2 class="fw-bold">$0<span class="fs-6 fw-normal">/mo</span></h2>
+                  <ul class="list-unstyled my-3">
+                    <li>Up to 3 users</li>
+                    <li>Basic analytics</li>
+                    <li>Email support</li>
+                  </ul>
+                  <a href="#signup" class="btn btn-outline-primary w-100 mt-2">Sign Up Free</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-primary shadow h-100 text-center">
+                <div class="card-header bg-primary text-white">
+                  <h5 class="mb-0">Pro</h5>
+                </div>
+                <div class="card-body">
+                  <h2 class="fw-bold">$19<span class="fs-6 fw-normal">/mo</span></h2>
+                  <ul class="list-unstyled my-3">
+                    <li>Unlimited users</li>
+                    <li>Advanced analytics</li>
+                    <li>Priority support</li>
+                  </ul>
+                  <a href="#signup" class="btn btn-primary w-100 mt-2">Start 14-Day Trial</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="fw-bold">What Customers Say</h2>
+              <p class="text-muted mb-0">See why teams love using PandaSaaS.</p>
+            </div>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+              <blockquote class="blockquote bg-white border rounded p-4 shadow-sm h-100">
+                <p class="mb-3">“PandaSaaS transformed our workflow. We ship features twice as fast.”</p>
+                <footer class="blockquote-footer">
+                  <strong>Elena T.</strong>, Product Lead<br>
+                  <span class="text-muted">Tech Innovators</span>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="col-md-5">
+              <blockquote class="blockquote bg-white border rounded p-4 shadow-sm h-100">
+                <p class="mb-3">“Intuitive, reliable, and powerful. Our favorite productivity tool.”</p>
+                <footer class="blockquote-footer">
+                  <strong>Marcus J.</strong>, Operations Manager<br>
+                  <span class="text-muted">ScaleUp Agency</span>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section id="signup" class="py-5 bg-primary text-white text-center">
+        <div class="container">
+          <h2 class="fw-bold mb-3">Ready to boost your team's productivity?</h2>
+          <p class="mb-4 fs-5">Sign up now and start your free trial or contact our team for a personalized demo!</p>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-4 me-2 mb-2">Contact Sales</a>
+          <a href="#" class="btn btn-light btn-lg px-4 mb-2">Get Started Free</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-5 border-top bg-light">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <h3 class="fw-bold mb-3 text-center">Contact Us</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@company.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
+              <p class="text-center mt-3 mb-0 text-muted">We'll get back to you within 1 business day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 bg-white border-top mt-auto">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <span class="text-muted">&copy; 2026 PandaSaaS – All rights reserved.</span>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a class="text-muted" href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a class="text-muted" href="#">Terms of Service</a></li>
+        </ul>
       </div>
-    </nav>
+    </footer>
 
-    <div class="container my-5">
-      <h1>Hello, world!</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">
-          You've successfully loaded up the Bootstrap starter example.
-        </p>
-        <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-        <hr class="col-1 my-4">
-
-        <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-        <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
-      </div>
-    </div>
-
- 
-        <!--
-          PANDA ELEMENT SELECTION SCRIPT
-          ===============================
-          Captures all element clicks inside the iframe and sends metadata to Bubble via postMessage.
-          Metadata captured: url, width, height, alt
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-element-selection.js" defer></script>
-
-        <!--
-          PANDA BRANDING SCRIPT
-          ====================
-          Handles Panda-specific branding, logos, placeholders, and runtime injection for the iframe/editor.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script src="https://bfwqdadlcyndtaqmqtci.supabase.co/storage/v1/object/public/pandajs/panda-branding.js" defer></script>
-        <!--
-          PANDA AUTO RELOAD SCRIPT
-          ====================
-          Handles Panda HMR solution built on railway to hot reload changes in preview.
-            ⚠ Do NOT remove or modify this script unless explicitly instructed by the admin.
-        -->
-        <script>
-        const es = new EventSource("/__hmr");
-        es.onmessage = () => location.reload();
-        </script>
-
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Optionally add main.js if custom JS is needed -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- Optionally add Bootstrap Icons CDN for icon placeholders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   </body>
 </html>
