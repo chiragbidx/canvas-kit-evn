@@ -1,0 +1,77 @@
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+/* Elevate feature, pricing, and testimonial cards for visual depth */
+.card.shadow-sm,
+.card.shadow {
+  box-shadow: 0 0.8rem 2rem rgba(44,62,80,0.06), 0 0.1rem 0.2rem rgba(44,62,80,0.03);
+  border-radius: 1rem;
+}
+
+/* Section headings and hero */
+section h2,
+section h3 {
+  letter-spacing: -0.5px;
+}
+
+/* Hero adjustments */
+section.py-5.bg-light.text-center {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+/* Buttons: make main CTA pop */
+.btn-primary, .btn-outline-primary {
+  border-radius: 0.4rem;
+  font-weight: 600;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,65,255,0.06);
+  transition: box-shadow 0.2s;
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  box-shadow: 0 0.5rem 1.1rem rgba(0,32,166,0.11);
+}
+
+/* Section spacing refinement */
+section.py-5 {
+  padding-top: 4rem!important;
+  padding-bottom: 4rem!important;
+}
+@media (max-width: 576px) {
+  section.py-5 {
+    padding-top: 2.5rem!important;
+    padding-bottom: 2.5rem!important;
+  }
+}
+
+/* Testimonials blockquote polish */
+blockquote.blockquote {
+  border-left: 4px solid var(--bs-primary);
+  background: #f8fafd;
+  font-size: 1.08rem;
+}
+
+/* Contact form: subtle field focus */
+form .form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.15rem rgba(13,110,253,.15);
+}
+
+/* Footer spacing and color */
+footer.bg-white {
+  border-top: 1px solid var(--bs-gray-300);
+  font-size: 0.96rem;
+}
+footer ul.list-inline-item a {
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+footer ul.list-inline-item a:hover {
+  opacity: 1;
+}
